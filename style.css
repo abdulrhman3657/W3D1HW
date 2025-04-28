@@ -82,12 +82,14 @@ header{
     width: 100px;
     height: 100px;
 
+    padding: 10px;
+
     border-radius: 1em;
 }
 
 .header-nav{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 
 }
@@ -96,6 +98,7 @@ input{
     text-align: center;
     width: 30%;
     padding: 0.5em;
+    padding-bottom: 20px;
 }
 
 .header-nav ul{
