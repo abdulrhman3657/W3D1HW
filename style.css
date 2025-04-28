@@ -23,7 +23,6 @@ grid-area: header;
 */
 
 .container{
-    /* background-color: beige; */
 
     display: grid;
 
@@ -40,7 +39,11 @@ grid-area: header;
 header{
     grid-area: header;
     color: white;
-    background-image: url("https://images.pexels.com/photos/8381004/pexels-photo-8381004.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=500&w=2000");
+    background-image: url("image.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 
     display: flex;
     flex-direction: column;
@@ -50,10 +53,29 @@ header{
     height: 50vh;
 }
 
+.header-nav{
+
+}
+
+.header-nav button{
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 1em;
+
+    font-weight: bold;
+
+    border: none;
+}
+
 .header-bottom{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.header-bottom h4{
+    padding: 10px;
 }
 
 .header-img{
@@ -67,6 +89,13 @@ header{
     display: flex;
     justify-content: space-around;
     align-items: center;
+
+}
+
+input{
+    text-align: center;
+    width: 30%;
+    padding: 0.5em;
 }
 
 .header-nav ul{
@@ -98,11 +127,18 @@ header{
 main{
     /* background-color: blue; */
     grid-area: main;
+
+    padding-left: 100px;
+    padding-right: 100px;
+
+    align-items: center;
+    justify-content: center;
+
 }
 
 .main-img{
     width: 95%;
-    height: 70%;
+    height: 95%;
     border-radius: 1em;
 
     /* width: 20%;
